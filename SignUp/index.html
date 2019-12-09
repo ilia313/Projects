@@ -5,70 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SignUp</title>
+    <link rel="stylesheet" href="main.css"
 </head>
 
 
     <style type="text/css">
+        .text {
+            font-size:12px; 
+            padding: 1%; 
+            margin-left: 10%; 
+            margin-bottom: 1%; 
+            text-align: left;
+        }
         .button {
             background-color: #0b4fda;
             border: none;
             color: white;
-            padding: 10px 20px;
+            padding: 5% 5%;
+            border-radius: 40%;
             text-align: center;
             text-decoration: none;
+            margin-left: 10%; 
             display: inline-block;
             font-size: 14px;
+            width: 40%;
           }
+        .form1 {
+            font-size: 12px;
+            border: 5% solid rgba(0, 0, 0, 0.2);
+            border-radius: 5%;
+            padding: 0%;
+            margin-bottom: 8%;
+            margin-left: 10%; 
+            width: 50%;
+            height:7%;
+            outline: 0;
+                    }
+            .form1:active,
+            .form1:focus {
+            border-color: #fbd75d;
+                         }
 
 
-
-        .wrapper {
-            text-align: center;
-                                      }
         .container {
             display: inline-block;
+            width: 50%;
+            height:80%;
             position: absolute;
             top: 10%; 
-            margin-left: -400px; 
+            margin-left: 25%;
             background-color: #50b2dc
                                     }
         .children1 {
             display: block;
             float: left;
-            width: 300px;
-            height: 600px;
+            width: 40%;
+            height: 100%;
             background-image: url(bg1.png) ;
         
                 }
         .children11 {
             display: block;
             float: right;
-            width: 250px;
-            height: 400px;
+            width: 80%;
+            height: 80%;
             background-image: url(bg2.png) ;
-            margin: 100px 0   
+            margin: 25% 0 
+            
+
+              
                           }
-        .children111 {
+        .sign {
             display: block;
             float: right;
-            width: 249px;
-            height: 29px;
-            margin: 280px 0
-        }
+            width: 100%;
+            height: 50%;
+            
+
+                          }
+        .terms {
+            display: block;
+            float: right;
+            margin-top: 90%;
+            width: 100%;
+            height: 10%;
+            
+                          }
         .children2 {
             display: block;
             float: left;
-            width: 500px;
-            height: 600px;
+            width: 60%;
+            height: 100%;
             background-image: url(bg1.png) ;
                 }
         .children22 {
             display: block;
             float: left;
-            width: 450px;
-            height: 500px;
+            width: 85%;
+            height: 90%;
             background-color: white;
-            margin: 50px 0
+            margin: 10% 0
                 }
         </style>
 
@@ -76,25 +112,49 @@
 <body bgcolor="000000">
 
 
-    <div class="wrapper">
+    
             <div class="container">
                 <div class="children1">
                     <div class="children11">
-                        <h1 style="color:white">Sign Up</h1>
-                        <div class="children111">    
-                                <a style="color:white"  href="#">Privacy policy & terms of service</a>
+
+                        <div class="sign">    
+                            <p style="font-size: 30px; color: white" align="center" >Sign Up</p>
+                        </div>
+                    
+                        <div class="terms"> 
+                                
+                            <p style="font-size: 10px;" align="center" >
+                            <a style="color:white" href="#">Privacy policy & terms of service</a></p>
+                                
+                            
                         </div>
                     </div>
                 </div>
                 <div class="children2">
                     <div class="children22">
+                           
+                        <p class="text">USERNAME</p>
+                        <input class="form1" type="text" placeholder="User Name" />
+                           
+                        <p class="text">E-MAIL</p>
+                        <input class="form1" type="email" placeholder="E-mail" />
+                        
+                        <p class="text">PASSWORD</p>
+                        <input class="form1" type="password" placeholder="Password" />
+                       
+                        <p class="text">REPEAT PASSWORD</p>
+                        <input class="form1" type="password" placeholder="Repeat Password" />
+                        <br>
+                        <button class="button" type="submit">Get Started</button>
+                        &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;  <!--это типа 5 пробелов -->   
+                          or <a  href="#">Sign in</a>
+                        
 
-
-
-                    </div> </div>
+                    </div> 
+                </div>
         
             </div>
-    </div>
+    
 
 </body>
 </html>
